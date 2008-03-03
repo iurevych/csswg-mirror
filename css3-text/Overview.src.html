@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2008-02-26 20:01:08 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2008-03-03 19:14:40 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-02-26 20:01:08 $ (CVS $Revision: 1.21 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-03-03 19:14:40 $ (CVS $Revision: 1.22 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -562,6 +562,9 @@
         starting content edge.</li>
       <li>A sequence of collapsible spaces (U+0020) at the end of a line
         is removed.</li>
+      <li>If spaces (U+0020) or tabs (U+0009) at the end of a line are
+        non-collapsible but have 'text-wrap' set to 'normal' or 'suppress'
+        the UA may visually collapse them.
     </ol>
 
     <div class="example">
@@ -774,6 +777,11 @@
     anywhere <em>except</em> between certain character combinations.
     Additionally the level of strictness in these restrictions can vary
     with the typesetting style.</p>
+
+  <p class="issue">Specify that out-of-flow elements do not introduce line
+   breaking opportunities. Specify whether images introduce line breaking
+   opportunities. Specify that CSS3 Text does not otherwise specify line
+   breaking opportunities.</p>
 
   <h3 id="word-break"><span class="secno">4.1.</span>
     Line Breaking Restrictions: the 'word-break' property</h3>

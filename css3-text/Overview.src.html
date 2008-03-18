@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2008-03-03 19:14:40 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2008-03-18 16:37:40 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-03-03 19:14:40 $ (CVS $Revision: 1.22 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-03-18 16:37:40 $ (CVS $Revision: 1.23 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -2662,15 +2662,17 @@
       of the shadow effect. If the color is not specified, a UA-chosen color
       will be used.</p>
 
-    <p>The shadow effects are applied in the order specified
-      <span class="issue">should this be changed to layer the same way
-      multiple backgrounds do (earlier on top)?</span>
-      and may thus overlay each other, but they never overlay the text 
-      itself. Shadow effects do not alter the size of a box, but may extend
-      beyond its boundaries. The shadow must be painted behind the element's
-      text but in front of its visible background. UAs should avoid painting
-      text shadows over text in adjacent elements belonging to the same stack
-      level and stacking context.</p>
+    <p>The shadow effects are applied front-to-back: the first shadow is on
+      top. The shadows may thus overlay each other, but they never overlay
+      the text  itself. Shadow effects do not alter the size of a box, but
+      may extend beyond its boundaries. The shadow must be painted behind the
+      element's text but in front of its visible background. UAs should avoid
+      painting text shadows over text in adjacent elements belonging to the
+      same stack level and stacking context.</p>
+
+    <p class="note">The painting order of shadows defined here is the opposite
+      of that defined in the 1998
+      <a href="http://www.w3.org/TR/1998/REC-CSS2-19980512">CSS2 Recommendation</a>.</p>
 
   <h3 id="text-outline"><span class="secno">8.4</span>
     Text Outlines: the 'text-outline' property</h3>

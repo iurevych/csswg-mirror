@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2008-07-03 22:55:34 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2008-07-03 23:00:00 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-07-03 22:55:34 $ (CVS $Revision: 1.24 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2008-07-03 23:00:00 $ (CVS $Revision: 1.25 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -2741,12 +2741,14 @@
      as in <a href="http://www.w3.org/TR/CSS21/box.html#border-width-properties">border-width</a>?)</p>
 
     <p>The blur radius is a length value that indicates the boundaries of the
-      blur effect. The exact algorithm for computing the blur effect is not
-      specified, but it is only applied to the outer edge of the outline. If
-      the blur radius is not specified, it is equal to zero.
+      blur effect. If it is zero, the shadow is sharp; otherwise the larger
+      the value, the more the shadow is blurred. The exact algorithm for
+      computing the blur effect is not specified, but it is only applied to
+      the outer edge of the outline. If the blur radius is not specified,
+      it is equal to zero. Negative values are not allowed.
       <span class="issue">Is a second blur radius needed for the inner edge?
-      Or should the blur apply to both edges?</span> Implementations may choose
-      to ignore the blur radius when text outline is combined with a
+      Or should the blur apply to both edges?</span> Implementations may
+      ignore the blur radius when text outline is combined with a
       <a href="#text-shadow">text shadow</a>.</p>
 
     <p>A color value must be specified before or after the length values of

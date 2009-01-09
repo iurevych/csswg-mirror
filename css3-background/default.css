@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.6 2009-01-09 22:52:50 bbos Exp $
+ * $Id: default.css,v 1.7 2009-01-09 22:53:59 bbos Exp $
  */
 
 @media print {
@@ -87,6 +87,7 @@ img {
 
     a:link, a:visited {
         color: inherit;
+        text-decoration: underline;
     }
 
     a.logo:link, a.logo:visited {

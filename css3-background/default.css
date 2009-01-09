@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.5 2008-09-09 22:38:03 fantasai Exp $
+ * $Id: default.css,v 1.6 2009-01-09 22:52:50 bbos Exp $
  */
 
 @media print {
@@ -50,7 +50,7 @@ p + p, p + div.sidefigure + p {
     text-indent: 2em;
     margin-top: 0
 }
-dd p {
+dd > p:first-child, li > p:first-child {
     margin-top: 0
 }
 

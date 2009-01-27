@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.7 2009-01-09 22:53:59 bbos Exp $
+ * $Id: default.css,v 1.8 2009-01-27 12:57:54 bbos Exp $
  */
 
 @media print {
@@ -177,7 +177,7 @@ pre.illegal-xml { color: red }
 div.illegal-xml { color: red }
 div.illegal-xml p { color: black }
 
-code { font-size: 90% }
+/* code { font-size: 90% } */
 .css { color: #800 }		/* inline CSS code (SPAN/CODE) */
 code.css { font-family: inherit; font-size: 100% }
 code.html { color: #600 }	/* inline HTML */
@@ -469,3 +469,9 @@ table.features td {
     dt dfn code {
       font-size: inherit;
     }
+
+/* This is mostly to make the list inside the CR exit criteria more compact. */
+dl ol, dl li {display: inline; padding: 0; margin: 0}
+dl ol {counter-reset: list-item}
+dl li {counter-increment: list-item}
+dl li:before {content: "(" counter(list-item) ") "; font-weight: bold}

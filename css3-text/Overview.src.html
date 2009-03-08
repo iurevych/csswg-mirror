@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2009-03-08 03:36:52 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2009-03-08 03:47:31 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2009-03-08 03:36:52 $ (CVS $Revision: 1.33 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2009-03-08 03:47:31 $ (CVS $Revision: 1.34 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -1835,7 +1835,7 @@
         </tr>
         <tr>
           <th>Value:</th>
-          <td>none | [start || end || adjacent]
+          <td>none | [start || [ end | allow-end ] || adjacent]
           </td>
         </tr>
         <tr>
@@ -1880,6 +1880,10 @@
       <dt><dfn title="punctuation-trim:end">end</dfn></dt>
       <dd>Trim (kern) the blank half of fullwidth closing punctuation at
         the end of each line.</dd>
+      <dt><dfn title="punctuation-trim:allow-end">allow-end</dfn></dt>
+      <dd>Trim (kern) the blank half of fullwidth closing punctuation at
+        the end of each line if it does not otherwise fit prior to
+        justification.</dd>
       <dt><dfn title="punctuation-trim:adjacent">adjacent</dfn></dt>
       <dd>Trim (kern) the blank half of fullwidth opening punctuation if its
         previous adjacent character is a fullwidth opening punctuation,

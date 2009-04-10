@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.8 2009-01-27 12:57:54 bbos Exp $
+ * $Id: default.css,v 1.9 2009-04-10 05:51:50 fantasai Exp $
  */
 
 @media print {
@@ -471,7 +471,7 @@ table.features td {
     }
 
 /* This is mostly to make the list inside the CR exit criteria more compact. */
-dl ol, dl li {display: inline; padding: 0; margin: 0}
-dl ol {counter-reset: list-item}
-dl li {counter-increment: list-item}
-dl li:before {content: "(" counter(list-item) ") "; font-weight: bold}
+ol.inline, ol.inline li {display: inline; padding: 0; margin: 0}
+ol.inline {counter-reset: list-item}
+ol.inline li {counter-increment: list-item}
+ol.inline li:before {content: "(" counter(list-item) ") "; font-weight: bold}

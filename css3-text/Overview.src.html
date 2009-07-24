@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2009-04-24 02:35:59 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2009-07-24 18:06:27 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2009-04-24 02:35:59 $ (CVS $Revision: 1.36 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2009-07-24 18:06:27 $ (CVS $Revision: 1.37 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -2209,7 +2209,7 @@
           </tr>
           <tr>
             <th>Value:</th>
-            <td>solid | double | dotted | dashed | dot-dash | dot-dot-dash | wave
+            <td>solid | double | dotted | dashed | wave
             </td>
           </tr>
           <tr>
@@ -2258,7 +2258,7 @@
             <th>Value:</th>
             <td><var><a href="#text-decoration-line">&lt;text-decoration-line&gt;</a></var> ||
                 <var><a href="#text-decoration-color">&lt;text-decoration-color&gt;</a></var> ||
-                <var><a href="#text-decoration-style">&lt;text-decoration-style&gt;</a></var>
+                <var><a href="#text-decoration-style">&lt;text-decoration-style&gt;</a></var> || blink
             </td>
           </tr>
           <tr>
@@ -2295,6 +2295,12 @@
         declaration that omits both the <code>text-decoration-color</code>
         and <code>text-decoration-style</code> values is backwards-compatible
         with CSS Levels 1 and 2.</p>
+
+      <p>If the <code>blink</code> keyword is specified the text blinks
+        (alternates between visible and invisible). Conforming user agents
+        may simply not blink the text. Note that not blinking the text is
+        one technique to satisfy
+        <a href="http://www.w3.org/TR/UAAG/guidelines.html#tech-on-off-blinking-text">checkpoint 3.3 of WAI-UAAG</a>.
 
       <div class="example">
         <p>The following example underlines unvisited links with a solid blue

@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.6 2009-04-14 15:37:58 bbos Exp $
+ * $Id: default.css,v 1.7 2010-01-04 21:40:51 dbaron Exp $
  */
 
 @media print {
@@ -106,7 +106,7 @@ ul.indexlist { margin-left: 0; /*column-width: 13em; columns: 13em*/ }
 ul.indexlist li { margin-left: 0; list-style: none }
 ul.indexlist li li { margin-left: 1em }
 
-.example {
+div.example, pre.example {
     counter-increment: exampleno;
 }
 div.example:before {

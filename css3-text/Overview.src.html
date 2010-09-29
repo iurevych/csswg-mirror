@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-29 09:05:27 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-29 10:43:41 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-29 09:05:27 $ (CVS $Revision: 1.54 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-29 10:43:41 $ (CVS $Revision: 1.55 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -632,6 +632,9 @@
         <li>Otherwise, if the script context on one side of the line break is
           Han, Yi, Hiragana, or Katakana and the context on the other side is
           Han, Yi, Hiragana, Katakana, or neutral, then the line break is removed.
+          <p class="issue">IE removes line breaks not only between two Hiragana but also Hiragana and fullwidth alphabets.
+            Firefox, Opera, and Safari does not remove line breaks even between two Hiragana.
+            So current rule written here will break everyone.</p>
         <li>Otherwise, if ''text-autospace'' property is set to add extra spaces
           for the combination of the character before the line break and after,
           then the line break is removed.

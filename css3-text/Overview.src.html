@@ -84,14 +84,14 @@
 
 <h1>CSS Text Level 3</h1>
 
-<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-29 08:57:37 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-29 09:05:27 $</h2>
 <!--
 <h2 class="no-num no-toc">W3C Working Draft 6 March 2007</h2>
 -->
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-29 08:57:37 $ (CVS $Revision: 1.53 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-29 09:05:27 $ (CVS $Revision: 1.54 $)</a>
     <dd><a
       href="http://www.w3.org/TR/2007/WD-css3-text-20070306/">http://www.w3.org/TR/2007/WD-css3-text-20070306/</a></dd>
   <dt>Latest version:</dt>
@@ -632,6 +632,13 @@
         <li>Otherwise, if the script context on one side of the line break is
           Han, Yi, Hiragana, or Katakana and the context on the other side is
           Han, Yi, Hiragana, Katakana, or neutral, then the line break is removed.
+        <li>Otherwise, if ''text-autospace'' property is set to add extra spaces
+          for the combination of the character before the line break and after,
+          then the line break is removed.
+          <p class="issue">Any feedback on this behavior is appreciated.
+            Now that we have text-autospace property, it makes sense to favor it than inserting spaces.
+            However, we also want to preserve backward compatibility as much as possible.
+            That is the reason why the line break should be removed only if text-autospace inserts spaces instead.</p></li>
         <li>Otherwise, the line break is converted to a space (U+0020).
       </ul>
 

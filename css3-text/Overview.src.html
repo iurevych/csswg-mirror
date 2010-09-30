@@ -85,13 +85,13 @@
 <h1>CSS Text Level 3</h1>
 
 <!--
-<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-30 13:34:33 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-30 13:48:21 $</h2>
 -->
 <h2 class="no-num no-toc">W3C Working Draft 5 October 2010</h2>
 
 <dl>
   <dt>This version:</dt>
-    <!-- <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-30 13:34:33 $ (CVS $Revision: 1.77 $)</a> -->
+    <!-- <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-30 13:48:21 $ (CVS $Revision: 1.78 $)</a> -->
     <dd><a
       href="http://www.w3.org/TR/2010/WD-css3-text-20101005/">http://www.w3.org/TR/2010/WD-css3-text-20101005/</a></dd>
   <dt>Latest version:</dt>
@@ -3241,14 +3241,18 @@
         <caption>Preferred emphasis mark and ruby position</caption>
         <thead>
           <tr>
-            <th scope="col">Language</th>
-            <th scope="col">Preferred mark position</th>
-            <th scope="col">Illustration</th>
+            <th scope="col" rowspan=2>Language</th>
+            <th scope="col" colspan=2>Preferred mark position</th>
+            <th scope="col" rowspan=2>Illustration</th>
           </tr>
+          <tr>
+            <th>Horizontal</th>
+            <th>Vertical</th>
         </thead>
         <tbody>
           <tr>
             <td scope="row">Japanese</td>
+            <td>over</td>
             <td>over</td>
             <td rowspan="3">
                 <img alt="Emphasis marks appear above each emphasized character in horizontal Japanese text."
@@ -3258,15 +3262,18 @@
           </tr>
           <tr>
             <td scope="row">Mongolian</td>
+            <td>over<span class="issue">?</span></td>
             <td>over</td>
           </tr>
           <tr>
             <td scope="row">Chinese (Traditional)</td>
             <td>over</td>
+            <td>over</td>
           </tr>
           <tr>
             <td scope="row">Chinese (Simplified)</td>
             <td>under</td>
+            <td>over</td>
             <td>
               <img alt="Emphasis marks appear below each emphasized character in horizontal Simplified Chinese text."
                     title="Emphasis (shown in blue for clarity) applied below a fragment of Chinese text"

@@ -85,13 +85,13 @@
 <h1>CSS Text Level 3</h1>
 
 <!--
-<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-30 13:48:21 $</h2>
+<h2 class="no-num no-toc">Editor's Draft $Date: 2010-09-30 14:12:24 $</h2>
 -->
 <h2 class="no-num no-toc">W3C Working Draft 5 October 2010</h2>
 
 <dl>
   <dt>This version:</dt>
-    <!-- <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-30 13:48:21 $ (CVS $Revision: 1.78 $)</a> -->
+    <!-- <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2010-09-30 14:12:24 $ (CVS $Revision: 1.79 $)</a> -->
     <dd><a
       href="http://www.w3.org/TR/2010/WD-css3-text-20101005/">http://www.w3.org/TR/2010/WD-css3-text-20101005/</a></dd>
   <dt>Latest version:</dt>
@@ -3546,7 +3546,9 @@
           If the character does not have corresponding fullwidth form,
           it is left as is.
           This value is typically used to typeset Latin characters and digits
-          like ideographic characters.</dd>
+          like ideographic characters.
+          <p class="issue">should try fallback if the glyph is missing.
+            should it also check fullwidth variants before falling back to next font?</p></dd>
       <dt><dfn title="text-transform:large-kana"><code>large-kana</code></dfn></dt>
         <dd>Converts all small Kana characters to normal Kana.
           This value is typically used for ruby annotation text,

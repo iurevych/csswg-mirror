@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.10 2010-10-06 14:31:40 fantasai Exp $
+ * $Id: default.css,v 1.11 2010-12-01 10:21:51 bbos Exp $
  */
 
 @media print {
@@ -151,6 +151,7 @@ pre.illegal-html, pre.xml, pre.illegal-xml {
     margin: 1em 0;
     border: thin solid #999;
     position: relative;
+    clear: both;
 }
 pre.example, pre.illegal-example, pre.html,
 pre.illegal-html, pre.xml, pre.illegal-xml {
@@ -192,9 +193,6 @@ dfn { font-weight: bolder; /*font-size: 1em*/ }
 /* Class note is a non-normative note. May be inline or a P or DIV */
 .note {
     color: green
-}
-p.note, div.note {
-    /* margin: 1em 2em; */
 }
 p.note:before, span.note:before { content: "\25B6" " " }
 div.note > p:first-child:before { content: "\25B6" " " }

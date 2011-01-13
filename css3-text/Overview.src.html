@@ -88,7 +88,7 @@
 
 <dl>
   <dt>This version:</dt>
-    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-01-03 18:03:29 $ (CVS $Revision: 1.99 $)</a>
+    <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-01-13 21:00:42 $ (CVS $Revision: 1.100 $)</a>
     <!--<dd><a
       href="http://www.w3.org/TR/2010/WD-css3-text-20101005/">http://www.w3.org/TR/2010/WD-css3-text-20101005/</a></dd> -->
   <dt>Latest version:</dt>
@@ -2457,7 +2457,13 @@
       The <a href="#text-decoration-skip"><code>text-decoration-skip</code></a>
       property can be used to modify this behavior, for example allowing
       inline replaced elements to be underlined or requiring that white
-      space be skipped.</p>
+      space be skipped.
+      
+    <p>The UA should place the start and end of the line inwards from
+      the content edge of the decorating element so that, e.g. two
+      underlined elements side-by-side do not appear to have a single
+      underline. (This is important in Chinese, where underlining is a
+      form of punctuation.)</p>
 
     <p>In determining the position and thickness of text decoration lines,
       user agents may consider the font sizes and dominant baselines of

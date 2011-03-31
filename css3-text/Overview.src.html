@@ -88,7 +88,7 @@
 
 <dl>
   <dt>This version:</dt>
-      <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-03-31 19:16:18 $ (CVS $Revision: 1.187 $)</a>
+      <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-03-31 19:23:21 $ (CVS $Revision: 1.188 $)</a>
     <!--
       <dd><a href="http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/">http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/</a></dd>
     -->
@@ -2064,7 +2064,12 @@
         <dfn title="text-justify:kashida"><code>kashida</code></dfn></dt>
         <dd>Justification primarily stretches
           <a href="#cursive-scripts">cursive scripts</a> through the use of
-          kashida or other calligraphic elongation.</dd>
+          kashida or other calligraphic elongation.
+          This value is <em>optional</em> for conformance to CSS3 Text.
+          (UAs that do not support cursive elongation must
+          <a href="http://www.w3.org/TR/css-beijing/#partial">treat the value
+          as invalid</a>.)
+        </dd>
     </dl>
 
     <p>When justifying text, the user agent takes the remaining space between

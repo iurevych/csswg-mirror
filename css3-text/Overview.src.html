@@ -88,7 +88,7 @@
 
 <dl>
   <dt>This version:</dt>
-      <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-04-16 07:51:51 $ (CVS $Revision: 1.204 $)</a>
+      <dd><a href="http://dev.w3.org/csswg/css3-text/Overview.html">$Date: 2011-04-16 08:02:53 $ (CVS $Revision: 1.205 $)</a>
     <!--
       <dd><a href="http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/">http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/</a></dd>
     -->
@@ -1039,6 +1039,9 @@
       T<span style="font-variant: small-caps">e</span>&chi;) they are not
       considered especially useful.</p>
 
+    <p>Hyphenation opportunities are not considered when calculating
+      ''min-content'' intrinsic sizes.
+
   <h3 id="hyphens">Hyphenation Control: the 'hyphens' property</h3>
 
     <table class=propdef>
@@ -1692,6 +1695,10 @@
       If specified together with ''hyphenate'', valid hyphenation
       takes precedence over ''break-word'' breaking.</dd>
     </dl>
+
+    <p>Break opportunities not part of ''word-wrap: normal'' line breaking
+       are not considered when calculating ''min-content'' intrinsic
+       sizes.
 
     <p class="note">This property should have been called 'emergency-wrap',
       however due to historical reasons it could not be given a less

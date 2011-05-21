@@ -1,10 +1,6 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
-<<<<<<< default.css
- * $Id: default.css,v 1.15 2011-05-17 01:13:03 fantasai Exp $
-=======
->>>>>>> 1.14
  */
 
 @media print {
@@ -336,6 +332,7 @@ table.proptable td, table.proptable th {
     border-style: solid none none dotted;
     border-width: thin;
     border-color: red;
+    vertical-align: baseline;
 }
 table.proptable th:first-child, table.proptable td:first-child {
     border-left-style: none;

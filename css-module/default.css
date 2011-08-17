@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.6 2011-08-17 00:05:36 tatkinsj Exp $
+ * $Id: default.css,v 1.7 2011-08-17 00:12:23 tatkinsj Exp $
  */
 
 @media print {
@@ -393,7 +393,7 @@ table.descdef tr:first-child td {
 
 /* For when values are extra-complex and need formatting for readability */
 table td.pre {
-	white-space: pre;
+	white-space: pre-wrap;
 }
 
 /* A footnote at the bottom of a propdef */

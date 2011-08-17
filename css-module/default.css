@@ -1,7 +1,7 @@
 /*
  * Style sheet for the CSS3 specification,
  * to be used in addition to http://www.w3.org/StyleSheets/TR/W3C-{WD,PR,REC}
- * $Id: default.css,v 1.5 2011-08-17 00:00:01 tatkinsj Exp $
+ * $Id: default.css,v 1.6 2011-08-17 00:05:36 tatkinsj Exp $
  */
 
 @media print {
@@ -389,6 +389,11 @@ table.propdef tr:first-child td,
 table.propdef-extra tr:first-child td,
 table.descdef tr:first-child td {
 	padding-top: 1em;
+}
+
+/* For when values are extra-complex and need formatting for readability */
+table td.pre {
+	white-space: pre;
 }
 
 /* A footnote at the bottom of a propdef */

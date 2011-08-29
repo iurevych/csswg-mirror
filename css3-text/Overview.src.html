@@ -35,7 +35,7 @@
 <dl>
   <dt>This version:</dt>
     <!--
-      <dd><a href="http://dev.w3.org/csswg/css3-text/">$Date: 2011-08-29 06:29:54 $ (CVS $Revision: 1.275 $)</a>
+      <dd><a href="http://dev.w3.org/csswg/css3-text/">$Date: 2011-08-29 06:45:20 $ (CVS $Revision: 1.276 $)</a>
     -->
       <dd><a href="http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/">http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/</a></dd>
   <dt>Latest version:</dt>
@@ -144,6 +144,33 @@
   There is an ongoing discussion about where these features belong: in
   existing CSS properties, in new CSS properties, or perhaps in other
   specifications.
+
+
+<h3 id="placement">
+Module Interactions</h3>
+
+  <p>This module replaces and extends the text-level
+  features defined in [[!CSS21]] chapter 16.
+
+<h3 id="values">
+Values</h3>
+
+  <p>This specification follows the
+  <a href="http://www.w3.org/TR/CSS21/about.html#property-defs">CSS property
+  definition conventions</a> from [[!CSS21]]. Value types not defined in
+  this specification are defined in CSS Level 2 Revision 1 [[!CSS21]].
+  Other CSS modules may expand the definitions of these value types: for
+  example [[CSS3COLOR]], when combined with this module, expands the
+  definition of the &lt;color&gt; value type as used in this specification.</p>
+  
+  <p>In addition to the property-specific values listed in their definitions,
+  all properties defined in this specification also accept the
+  <a href="http://www.w3.org/TR/CSS21/cascade.html#value-def-inherit">inherit</a>
+  keyword as their property value. For readability it has not been repeated
+  explicitly.
+
+<h3 id="terms">
+Terminology</h3>
 
   <p id="grapheme-cluster">A <dfn>grapheme cluster</dfn> is what
     a language user considers to be a character or a basic unit of the

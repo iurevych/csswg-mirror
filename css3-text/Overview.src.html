@@ -34,7 +34,7 @@
 
 <dl>
   <dt>This version:</dt>
-      <dd><a href="http://dev.w3.org/csswg/css3-text/">$Date: 2011-08-20 07:13:18 $ (CVS $Revision: 1.271 $)</a>
+      <dd><a href="http://dev.w3.org/csswg/css3-text/">$Date: 2011-08-29 05:55:19 $ (CVS $Revision: 1.272 $)</a>
     <!--
       <dd><a href="http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/">http://www.w3.org/TR/[YEAR]/WD-css3-text-[CDATE]/</a></dd>
     -->
@@ -266,8 +266,8 @@
       order:</p>
     <ol>
       <li>''capitalize'', ''uppercase'', and ''lowercase''</li>
-      <li>''fullwidth''</li>
-      <li>''fullsize-kana''</li>
+      <li>''full-width''</li>
+      <li>''full-size-kana''</li>
     </ol>
 
     <p>Text transformation happens after <a href="#white-space-rules">white
@@ -278,7 +278,7 @@
       <p>The following example converts the ASCII characters in abbreviations
         in Japanese to their fullwidth variants so that they lay out and line
         break like ideographs:
-      <pre>abbr:lang(ja) { text-transform: fullwidth; }</pre>
+      <pre>abbr:lang(ja) { text-transform: full-width; }</pre>
     </div>
 
     <p class="issue">All-caps text sometimes has special typographic considerations.
@@ -4405,7 +4405,7 @@ Index</h2>
           <td>European (French)
       <tr><td>'text-transform': ''capitalize'', ''uppercase'', ''lowercase''
           <td>Western
-      <tr><td>'text-transform': ''fullwidth'', ''fullsize-kana''
+      <tr><td>'text-transform': ''full-width'', ''full-size-kana''
           <td>CJK
       <tr><td>'text-underline-position': ''auto''
           <td>CJK
